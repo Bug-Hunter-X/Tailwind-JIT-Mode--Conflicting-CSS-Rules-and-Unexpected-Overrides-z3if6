@@ -1,0 +1,1 @@
+The Tailwind CSS JIT mode can cause unexpected behavior if you have conflicting or poorly structured CSS rules.  For example, using a class that's defined later in your CSS file might override an earlier definition, even if the specificity seems correct. This is particularly true if you're using arbitrary values or complex selectors.

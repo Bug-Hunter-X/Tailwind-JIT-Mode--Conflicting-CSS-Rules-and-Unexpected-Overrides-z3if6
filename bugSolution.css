@@ -1,0 +1,7 @@
+Several strategies can resolve this:
+
+1. **Specificity:** Ensure your selectors have the appropriate specificity. Add more specific selectors (e.g., using IDs, more class names) to override less specific styles as needed.
+2. **Class Order:** Reorder your CSS classes to ensure that classes with higher precedence are applied later.  Tailwind's JIT engine processes rules sequentially.  The order in which you declare styles matters.
+3. **!important (Use Sparingly):** As a last resort, you can use the `!important` flag.  However, overuse can lead to maintenance nightmares; it's generally best to resolve conflicts through specificity and proper class order.
+4. **CSS Modules:** If the conflicts stem from naming collisions across components, consider using CSS modules to provide scoped class names, preventing unintended style interactions.
+5. **Debugging Tools:** Use your browser's developer tools to inspect the generated CSS and understand the order of styles applied to identify the source of conflicts.
